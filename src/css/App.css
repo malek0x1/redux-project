@@ -1,0 +1,132 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  padding: 50px;
+  border-right: 1px solid #ddf;
+  flex: 0.1 1 250px;
+}
+
+.sidebar ul {
+  padding-top: 30px;
+}
+
+.sidebar ul li {
+
+  padding: 20px;
+  margin-bottom: 10px;
+
+
+}
+
+.sidebar ul li:hover {
+  border-bottom: 2px solid black;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.logo {
+  padding-left: 20px;
+}
+
+/* --------- */
+.main {
+  flex: .4 1 200px;
+}
+
+.header {
+  padding: 40px;
+  display: flex;
+  border-bottom: 1px solid #ddf;
+  border-right: 1px solid #ddf;
+}
+
+.header .header-input input {
+  outline: none;
+  height: 40px;
+  border: none;
+  background-color: #eee;
+  width: 250px;
+  padding: 10px;
+
+}
+
+.header button {
+  margin-left: 10px;
+  border: none;
+  padding: 8px 25px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+
+}
+
+.posts {
+  padding: 10px;
+}
+
+.post {
+  display: flex;
+  border: 1px solid #ddf;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+
+.post .data {
+  padding-top: 10px;
+
+}
+
+
+/* -------------- */
+
+
+@media (max-width:1130px) {
+  .sidebar {
+    flex: 0.7 1 0px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddf;
+
+  }
+
+  .header {
+    min-width: 110%;
+  }
+
+  .header .header-input {
+    padding: 0px;
+  }
+
+  .header {
+    display: flex;
+    padding: 20px;
+  }
+
+  .header .header-input input {
+    /* width: 150px; */
+    width: 60%;
+
+  }
+
+  .header button {
+    position: absolute;
+  }
+
+}
